@@ -1,3 +1,21 @@
 {
-  "streams": []
+  "streams": [
+    {
+      "title": "momo gatinha",
+      "description": "momo best momo",
+      "id": 2
+    },
+    {
+      "title": "momo ama momo",
+      "description": "momo é muito lindinha",
+      "userId": "116897929292514531480",
+      "id": 3
+    },
+    {
+      "title": "eita momo",
+      "description": "momo ama momo muito",
+      "userId": "116897929292514531480",
+      "id": 4
+    }
+  ]
 }
