@@ -1,19 +1,19 @@
 import React from 'react';
-import { Field, reduxForm } from 'redux-form';
+import {Field, reduxForm} from 'redux-form';
 
 class StreamForm extends React.Component {
-  renderError({ error, touched }) {
+  renderError({error, touched}) {
     if (error && touched) {
       return (
-        <div className="ui error message" >
+        <div className="ui error message">
           <div className="header">{error}</div>
         </div>
       )
     }
-    return;
+
   }
 
-  renderInput = ({ input, label, meta }) => {
+  renderInput = ({input, label, meta}) => {
     const inputClasses = `field ${meta.error && meta.touched ? 'error' : ''}`;
     return (
       <div className={inputClasses}>
@@ -34,8 +34,8 @@ class StreamForm extends React.Component {
         onSubmit={this.props.handleSubmit(this.onSubmit)}
         className="ui form error"
       >
-        <Field name="title" component={this.renderInput} label="Enter Title" />
-        <Field name="description" component={this.renderInput}  label="Enter Description" />
+        <Field name="title" component={this.renderInput} label="Enter Title"/>
+        <Field name="description" component={this.renderInput} label="Enter Description"/>
         <button className="ui button primary" type="submit">Submit</button>
       </form>
     )
